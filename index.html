@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SnapTrace AI — Incident Debugger</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="shell">
+<header><div class="brand"><b>S</b><div><strong>SnapTrace <span>AI</span></strong><small>Phone-first Android debugging agent</small></div></div><div class="top"><span>● Prototype</span><span>iQOO device · connected</span></div></header>
+<section class="hero"><div><label>DEVELOPER TOOLS</label><h1>Turn an app failure into an explanation.</h1><p>SnapTrace captures evidence around crashes and performance incidents, transfers it through Office Kit, and lets an AI debugging agent reconstruct what happened.</p></div><div class="incident"><small>CURRENT INCIDENT</small><h2>ST-0042</h2><em>ANR DETECTED</em><span>BugLab · 10:42:18</span></div></section>
+<main><aside class="phone"><div class="phead">BugLab <span>● ● ●</span></div><div class="screen"><h3>SnapTrace Lab</h3><small>● App running</small><div class="fps"><b id="fps">60</b><small>FPS</small></div><button id="anr">Trigger ANR</button><button id="crash">Trigger Crash</button><div id="plog"><p>10:42:10 App started</p><p>10:42:13 SnapTrace SDK ready</p><p>10:42:16 Waiting for incident…</p></div></div><div class="pfoot">SnapTrace SDK <span>●</span></div></aside>
+<section class="dash"><div class="dashhead"><div><label>INCIDENT WORKSPACE</label><h2 id="title">Ready to capture</h2></div><button class="reset" id="reset">Reset demo</button></div>
+<div class="steps"><div id="s1" class="active">01 <span>Capture</span></div><i id="l1"></i><div id="s2">02 <span>Transfer</span></div><i id="l2"></i><div id="s3">03 <span>Analyze</span></div><i id="l3"></i><div id="s4">04 <span>Explain</span></div></div>
+<div class="grid"><section class="panel"><h3>◷ Incident timeline <small>ST-0042</small></h3><div id="timeline" class="timeline">Trigger the ANR on the phone to begin capture.</div></section>
+<section class="panel"><h3>⌁ Performance snapshot <small>DEVICE</small></h3><div class="metrics"><div>Frame time peak<b id="m1">—</b></div><div>Main thread block<b id="m2">—</b></div><div>Memory peak<b id="m3">—</b></div><div>Incident duration<b id="m4">—</b></div></div></section></div>
+<section class="panel transfer"><div><b>⇄ Office Kit bridge</b><small id="transfer">Waiting for an incident bundle…</small></div><div class="bar"><i id="bar"></i></div><b id="pct">0%</b></section>
+<div class="grid"><section class="panel"><h3>✦ AI diagnosis <small id="confidence">—</small></h3><div id="diag" class="empty">Run an incident to generate an evidence-backed diagnosis.</div></section>
+<section class="panel"><h3>✓ Evidence</h3><div id="evidence" class="empty">Logs, stack trace and metrics will appear here.</div></section></div>
+<section class="panel fix"><h3>⌘ Suggested fix <small>ACTIONABLE</small></h3><div class="fixgrid"><div><p id="fix">SnapTrace will generate a concrete remediation after analysis.</p><button id="verify">Verify fix</button></div><pre id="code">// waiting for incident analysis</pre></div></section>
+<section class="panel verifybox" id="verifybox"><h3>↗ Verification <small>BEFORE / AFTER</small></h3><div class="verifygrid"><div>Frame time<b>480 ms</b><small>before</small></div><strong>→</strong><div>Frame time<b class="good">32 ms</b><small>after</small></div><div>ANR<b class="good">None</b><small>verified</small></div></div></section>
+</section></main><footer>SnapTrace AI · Phase 1 prototype <span>Prototype metrics are simulated; real device measurements come during the city battle.</span></footer>
+</div><script src="script.js"></script></body></html>
