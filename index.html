@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SnapTrace AI — From freeze to root cause. A local-first Android crash and performance debugger.">
+<meta property="og:title" content="SnapTrace AI — From Freeze to Root Cause">
+<meta property="og:description" content="Capture. Reconstruct. Explain. Fix.">
+<title>SnapTrace AI — From Freeze to Root Cause</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">SNAPTRACE <span>AI</span></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav>
+    <a href="#product">Product</a><a href="#workflow">How It Works</a><a href="#architecture">Architecture</a><a href="#ai">AI Diagnosis</a><a href="#demo">Demo</a>
+    <a class="nav-cta" href="https://github.com/karanpanchal071-tech/snaptrace-ai" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="eyebrow">ANDROID INCIDENT INTELLIGENCE</div>
+  <h1>FROM FREEZE<br>TO <em>ROOT CAUSE.</em></h1>
+  <p>SnapTrace AI turns Android crashes, freezes and performance incidents into evidence-backed diagnoses using on-device capture, local analysis and AI reasoning.</p>
+  <div class="actions"><a class="btn" href="#demo">WATCH DEMO ↓</a><a class="btn ghost" href="#architecture">EXPLORE ARCHITECTURE →</a></div>
+  <div class="hero-flow"><span>PHONE</span><i>→</i><span>INCIDENT</span><i>→</i><span>EVIDENCE</span><i>→</i><span>AI</span><i>→</i><b>ROOT CAUSE</b></div>
+</section>
+
+<section id="product" class="section">
+  <div class="section-head"><div class="eyebrow">THE PROBLEM</div><h2>THE SYMPTOM<br>ISN'T THE ANSWER.</h2></div>
+  <div class="problem-grid">
+    <article><b>01</b><h3>APP FREEZES</h3><p>The developer knows something went wrong, but not what caused it.</p></article>
+    <article><b>02</b><h3>FRAGMENTED EVIDENCE</h3><p>Logs, thread stacks, memory, thermal state and rendering data live in separate places.</p></article>
+    <article><b>03</b><h3>MANUAL CORRELATION</h3><p>Developers spend time reproducing, searching logs and guessing which signal matters.</p></article>
+  </div>
+</section>
+
+<section class="section dark-section">
+  <div class="section-head"><div class="eyebrow">THE SOLUTION</div><h2>ONE INCIDENT.<br>ONE EVIDENCE PACKAGE.</h2></div>
+  <div class="signal-grid">
+    <div class="signal">SCREEN / INCIDENT <span>Capture the moment</span></div>
+    <div class="signal">THREAD STATE <span>Find blocking work</span></div>
+    <div class="signal">LOGCAT <span>Correlate runtime events</span></div>
+    <div class="signal">MEMORY <span>Process pressure</span></div>
+    <div class="signal">THERMAL <span>Device context</span></div>
+    <div class="signal">BATTERY / DEVICE <span>Complete the picture</span></div>
+  </div>
+</section>
+
+<section id="workflow" class="section">
+  <div class="section-head"><div class="eyebrow">HOW SNAPTRACE WORKS</div><h2>CAPTURE. CORRELATE.<br>EXPLAIN. FIX.</h2></div>
+  <div class="steps">
+    <div><strong>01</strong><h3>CAPTURE</h3><p>SnapTrace captures incident evidence directly on the Android device.</p></div>
+    <div><strong>02</strong><h3>PACKAGE</h3><p>Evidence becomes a compact incident bundle for analysis.</p></div>
+    <div><strong>03</strong><h3>TRANSFER</h3><p>Office Kit provides the phone-to-laptop development workflow.</p></div>
+    <div><strong>04</strong><h3>ANALYZE</h3><p>The local analyzer parses stacks, logs and performance context.</p></div>
+    <div><strong>05</strong><h3>REASON</h3><p>Evidence-grounded AI identifies the most likely explanation.</p></div>
+    <div><strong>06</strong><h3>FIX</h3><p>The developer gets a likely code location and practical remediation.</p></div>
+  </div>
+</section>
+
+<section class="section dashboard-section">
+  <div class="section-head"><div class="eyebrow">PRODUCT PREVIEW</div><h2>EVERY SIGNAL.<br>ONE INCIDENT TIMELINE.</h2></div>
+  <div class="dashboard">
+    <div class="dash-top"><span>SNAPTRACE <b>AI</b></span><small>LOCAL-FIRST DEBUGGER</small></div>
+    <div class="dash-incident"><small>ROOT-CAUSE ASSESSMENT</small><h3>MAIN-THREAD BLOCKING</h3><strong>98% CONFIDENCE</strong><p>Captured evidence is most consistent with blocking work on the Android UI thread.</p><code>MainActivity.kt:42</code></div>
+    <div class="metrics">
+      <div><small>FRAMES SKIPPED</small><b>181</b></div><div><small>RENDER STALL</small><b>3038 ms</b></div><div><small>PROCESS PSS</small><b>74.4 MB</b></div><div><small>DURATION</small><b>3000 ms</b></div>
+    </div>
+    <div class="dash-grid"><div class="timeline-card"><h4>INCIDENT TIMELINE</h4><p><i></i>Incident detected <small>T+0 ms</small></p><p class="danger"><i></i>Main thread enters blocking call <small>T+0 ms</small></p><p class="danger"><i></i>181 frames skipped <small>During stall</small></p><p class="ok"><i></i>Thermal status normal <small>At capture</small></p><p class="ok"><i></i>Incident released <small>T+3000 ms</small></p></div>
+    <div class="device-card"><h4>DEVICE CONTEXT</h4><b>Android Device</b><p>Android 16 · SDK 36</p><div class="mini"><span>BATTERY</span><b>—%</b></div><div class="mini"><span>THERMAL</span><b>NORMAL</b></div></div></div>
+  </div>
+  <div class="product-tabs"><span class="active">Overview</span><span>Crash Replay</span><span>Performance</span><span>Stack & Logs</span><span>AI Diagnosis</span></div>
+</section>
+
+<section id="architecture" class="section">
+  <div class="section-head"><div class="eyebrow">ARCHITECTURE</div><h2>THE PHONE ISN'T A SCREEN.<br>IT'S PART OF THE DEBUGGER.</h2></div>
+  <div class="architecture">
+    <div class="node phone">ANDROID DEVICE<br><small>Incident capture</small></div><div class="arrow">↓</div>
+    <div class="node">SNAPTRACE SDK<br><small>Telemetry + evidence</small></div><div class="arrow">↓</div>
+    <div class="node">INCIDENT BUNDLE<br><small>Logs + stacks + metrics</small></div><div class="arrow">↓</div>
+    <div class="node yellow">OFFICE KIT<br><small>Phone ↔ Laptop workflow</small></div><div class="arrow">↓</div>
+    <div class="node">LOCAL ANALYZER<br><small>Parse + correlate</small></div><div class="arrow">↓</div>
+    <div class="node yellow">AI ROOT-CAUSE REASONER<br><small>Evidence → explanation → fix</small></div>
+  </div>
+</section>
+
+<section id="ai" class="section dark-section">
+  <div class="section-head"><div class="eyebrow">AI DIAGNOSIS</div><h2>AI THAT REASONS<br>FROM <em>EVIDENCE.</em></h2></div>
+  <div class="ai-card">
+    <div class="ai-title"><span>🧠 AI ROOT-CAUSE REASONER</span><small>EVIDENCE-GROUNDED · LOCAL-FIRST</small></div>
+    <div class="ai-body"><div><small>ROOT CAUSE</small><h3>MAIN-THREAD BLOCKING</h3><b>98% confidence</b></div><div><small>OBSERVED EVIDENCE</small><ul><li>181 frames skipped</li><li>3038 ms render stall</li><li>Thermal status normal</li><li>Blocking call observed on main thread</li></ul></div><div><small>RECOMMENDED FIX</small><p>Move confirmed blocking work away from the Android main/UI thread using a coroutine, executor or other background mechanism.</p><code>MainActivity.kt:42</code></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><div class="eyebrow">WHY SNAPTRACE</div><h2>STOP DEBUGGING<br>ONE SIGNAL AT A TIME.</h2></div>
+  <div class="compare"><div><small>TRADITIONAL DEBUGGING</small><p>Separate logs</p><p>Manual correlation</p><p>Reproduce repeatedly</p><p>Developer interpretation</p><p>Slow diagnosis</p></div><div class="winner"><small>SNAPTRACE AI</small><p>Unified incident evidence</p><p>Performance context</p><p>Thread + device state</p><p>Evidence-grounded AI</p><p>Actionable diagnosis</p></div></div>
+</section>
+
+<section id="demo" class="section demo">
+  <div class="section-head"><div class="eyebrow">DEMO</div><h2>SEE IT GO FROM<br>FREEZE → FIX.</h2></div>
+  <div class="video"><div><span>▶</span><h3>SNAPTRACE AI DEMO</h3><p>Phone incident capture → evidence bundle → local analyzer → AI diagnosis</p><small>Replace this panel with your final walkthrough video URL.</small></div></div>
+  <div class="actions center"><a class="btn" href="https://github.com/karanpanchal071-tech/snaptrace-ai" target="_blank">VIEW GITHUB ↗</a><a class="btn ghost" href="http://127.0.0.1:8765">RUN LOCAL PROTOTYPE ↗</a></div>
+</section>
+
+<section class="final"><div class="eyebrow">SNAPTRACE AI</div><h2>A FREEZE SHOULD<br>END WITH AN ANSWER.</h2><p>Capture. Reconstruct. Explain. Fix.</p><a class="btn" href="#top">BACK TO TOP ↑</a></section>
+</main>
+<footer>SNAPTRACE AI · Visual On-Device Crash & Performance Debugger · Built for iQOO Hackathon 2026</footer>
+<script src="script.js"></script>
+</body></html>
