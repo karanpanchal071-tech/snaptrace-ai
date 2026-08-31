@@ -2,44 +2,62 @@
 
 ### From Android freeze to root cause.
 
-LINK : https://karanpanchal071-tech.github.io/snaptrace-ai/
+SnapTrace AI is a **local-first, evidence-grounded AI debugging system for Android incidents**.
 
-SnapTrace AI is a local-first, evidence-grounded debugging system for Android incidents.
+It helps developers move from a reproducible Android **ANR / UI freeze** to a structured incident report, supporting evidence, root-cause assessment, likely code location, and recommended debugging action.
 
-It helps developers move from a reproducible Android UI freeze/ANR to a structured incident report, root-cause assessment, supporting evidence, and an actionable debugging recommendation.
-
-## Live Demo
-
-https://karanpanchal071-tech.github.io/snaptrace-ai/
-
-## What SnapTrace AI Does
-
-Instead of manually collecting logs and trying to understand an Android freeze, SnapTrace creates a structured evidence bundle and analyzes it through a local web-based debugging interface.
-
-### Core workflow
-
-**Trigger incident → Capture evidence → Create ZIP → Analyze evidence → Identify root cause → Explain evidence → Suggest fix**
-
-The complete workflow is demonstrated using a real Android test application and the SnapTrace analyzer.
+Instead of manually checking logs, threads, memory, device state, and performance symptoms separately, SnapTrace brings the evidence together around a single incident.
 
 ---
 
-## Key Features
+## 🚀 Live Demo
 
-### 1. Android Incident Reproduction
+**Website:**  
+https://karanpanchal071-tech.github.io/snaptrace-ai/
 
-The Android application provides a controlled environment for reproducing a UI freeze / ANR scenario.
+**Source Code:**  
+https://github.com/karanpanchal071-tech/snaptrace-ai
 
-The app can:
+---
 
-- Trigger an ANR / UI freeze scenario
-- Display a severely degraded FPS condition
-- Capture incident evidence
-- Generate a structured evidence bundle
+## 🎯 Problem
 
-Example incident:
+Android UI freezes and ANRs are often difficult to diagnose because the visible symptom does not immediately reveal the underlying cause.
+
+A developer may need to correlate:
+
+- Logcat
+- Thread information
+- Memory usage
+- Device information
+- Thermal state
+- Rendering/performance signals
+- Incident timing
+- Application code
+
+Manually combining these signals is slow and makes it easy to miss the relationship between them.
+
+### SnapTrace AI solves this by turning a captured Android incident into an evidence-driven debugging workflow.
+
+---
+
+# 🔄 How SnapTrace Works
 
 ```text
-Trigger: ANR_UI_FREEZE
-Duration: 3000 ms
-Observed FPS: 2 FPS
+Android Incident
+       ↓
+Trigger ANR / UI Freeze
+       ↓
+Capture Evidence
+       ↓
+Generate Incident ZIP
+       ↓
+Upload to SnapTrace Analyzer
+       ↓
+Parse & Correlate Evidence
+       ↓
+Root-Cause Assessment
+       ↓
+AI Diagnosis
+       ↓
+Recommended Fix
